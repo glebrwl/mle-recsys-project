@@ -69,4 +69,9 @@ jupyter lab --ip=0.0.0.0 --no-browser
 
 Код для тестирования сервиса находится в файле `test_service.py`.
 
-<*укажите здесь необходимые шаги для тестирования сервиса рекомендаций*>
+1. Из папки проекта запустим три сервиса из разных терминалов: 
+    * uvicorn recommendations_service:app
+    * uvicorn features_service:app --port 8010 
+    * uvicorn events_service:app --port 8020
+2. Из четвертого терминала перейдем в папку test_scripts и можем запустить любой из тестовых скриптов через python3 
+3. Файл test_service.log находится в папке test_scripts
