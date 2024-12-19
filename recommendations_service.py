@@ -107,5 +107,3 @@ async def recommendations(user_id:int, k:int = 20):
     recs = rec_store.get(user_id, k)
 
     return {"recs": recs} 
-
-# rec_store.get(user_id=100, k=5) 
