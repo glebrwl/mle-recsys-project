@@ -1,0 +1,3 @@
+INFO:root:Sending request to features service.
+INFO:root:Status code: 200
+INFO:root:Similar items: {similar_items}

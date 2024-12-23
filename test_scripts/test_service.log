@@ -1,0 +1,9 @@
+INFO:root:Sending request to events service to get events for user_id: 1453637
+INFO:root:Events received: []
+INFO:root:Sending request to events service to get events for user_id: 1353637
+INFO:root:Events received: []
+INFO:root:Sending request to events service to get events for user_id: 1337055
+INFO:root:Events received: [17245]
+INFO:root:Requesting similar items for item_id=17245
+INFO:root:Similar items for item_id=17245: {'similar_items': [55581118, 26217362, 36286996, 37500057, 36126550, 34871110, 9191479, 37131883, 35090543], 'score': [0.9992843270301819, 0.9991687536239624, 0.999062180519104, 0.9990467429161072, 0.9989566206932068, 0.998896598815918, 0.9988665580749512, 0.9988402128219604, 0.9987755417823792]}
+INFO:root:Completed test script execution.

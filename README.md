@@ -63,7 +63,13 @@ jupyter lab --ip=0.0.0.0 --no-browser
 
 Код сервиса рекомендаций находится в файле `recommendations_service.py`.
 
-<*укажите здесь необходимые шаги для запуска сервиса рекомендаций*>
+Из папки проекта нужно запустить три сервиса из разных терминалов: 
+1. uvicorn recommendations_service:app
+2. uvicorn features_service:app --port 8010 
+3. uvicorn events_service:app --port 8020
+
+Для финальной версии рекоммендаций, оффлайн и онлайн рекоммендации чередуются. Когда один из списков рекоммендаций заканчивается, мы просто добавляем в конец финального списка реккоммендаций все оставшие рекоммендации из более длинного списка.
+
 
 # Инструкции для тестирования сервиса
 
@@ -73,5 +79,6 @@ jupyter lab --ip=0.0.0.0 --no-browser
     * uvicorn recommendations_service:app
     * uvicorn features_service:app --port 8010 
     * uvicorn events_service:app --port 8020
-2. Из четвертого терминала перейдем в папку test_scripts и можем запустить любой из тестовых скриптов через python3 
-3. Файл test_service.log находится в папке test_scripts
+2. Из четвертого терминала перейдем в папку test_scripts и для начала запускаем python3 test_put_events_service.py для того, чтобы добавить в хранилище ивентов взаимодействие юзера с id 1337055.
+3. После можем протестировать python3 test_get_events_service.py и основной сервис: python3 test_service.py
+4. Файлы test_service.log, test_feature_service.log, test_get_events_service.log и test_put_events_service.log находятся в папке test_scripts

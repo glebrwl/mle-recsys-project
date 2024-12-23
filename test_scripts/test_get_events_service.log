@@ -1,0 +1,2 @@
+INFO:root:Sending request to get events from events service.
+INFO:root:{'events': [17245]}

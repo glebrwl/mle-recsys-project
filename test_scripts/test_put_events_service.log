@@ -1,0 +1,3 @@
+INFO:root:Sending request to put events to events service.
+INFO:root:Status code: 200
+INFO:root:{'result': 'ok'}
